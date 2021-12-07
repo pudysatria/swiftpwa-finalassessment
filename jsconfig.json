@@ -90,6 +90,7 @@
             "@common_select": ["src/modules/commons/Select", "core/modules/commons/Select"],
             "@common_textfield": ["src/modules/commons/TextField", "core/modules/commons/TextField"],
             "@common_carousel": ["src/modules/commons/carousel", "core/modules/commons/carousel"],
+            "@common_title":["src/modules/commons/CustomTitle"],
 
             "@common_button/*": ["src/modules/commons/Button/*", "core/modules/commons/Button/*"],
             "@common_buttonqty/*": ["src/modules/commons/ButtonQty/*", "core/modules/commons/ButtonQty/*"],
