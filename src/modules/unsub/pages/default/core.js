@@ -5,8 +5,7 @@ import Container from '@material-ui/core/Container';
 import TextField from '@material-ui/core/TextField';
 import FormControl from '@material-ui/core/FormControl';
 import CustomButton from '@core_modules/commons/Button/index';
-import { useMutation } from '@apollo/client';
-import unsubscribeEmail from '@core_modules/unsub/services/graphql/schema';
+import unsubEmail from '@core_modules/unsub/services/graphql/';
 import Toast from '@core_modules/commons/Toast/index';
 import Box from '@material-ui/core/Box';
 import Rule from './components/Rule';
@@ -28,7 +27,7 @@ const Unsub = (props) => {
         setValue(e.target.value);
     };
     let res = null;
-    const [gql] = useMutation(unsubscribeEmail);
+    const [gql] = unsubEmail();
     const handleSubmit = async () => {
         const { data } = await gql({ variables: { email: value } });
         res = data;

@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client';
 
-const unsubscribeEmail = gql`
+const UNSUBSCRIBE_EMAIL = gql`
     mutation unsub($email: String) {
         unSubscribe(input: { email: $email }) {
             status {
@@ -10,4 +10,4 @@ const unsubscribeEmail = gql`
         }
     }
 `;
-export default unsubscribeEmail;
+export default UNSUBSCRIBE_EMAIL;
